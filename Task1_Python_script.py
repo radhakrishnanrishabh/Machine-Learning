@@ -51,7 +51,7 @@ def save_file(text):
 		os.mkdir('./scraped_articles')
 	name = url.split("/")[-1]
 	print(name)
-	fname = f'scraped_articles/.txt'
+	fname = f'scraped_articles/{name}.txt'
 	
 	# Code here - write a file using with (2 lines)
 	with open(fname, 'w') as savedFile:
